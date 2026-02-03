@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Joel Lutor Yiye | Portfolio</title>
+
+<meta name="description" content="Joel Lutor Yiye — Frontend Developer, UI/UX Designer & Digital Artist" />
+
+<!-- Tailwind -->
+<script>
+tailwind.config = {
+  darkMode: 'class'
+}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button micro interaction */
+.btn {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+/* Card hover */
+.card {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 40px rgba(0,0,0,.15);
+}
+
+/* =========================
+   Contact Gradient Background
+========================= */
+.gradient-bg {
+  background: linear-gradient(
+    -45deg,
+    #f8fafc,
+    #e2e8f0,
+    #f1f5f9,
+    #e5e7eb
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* =========================
+   Glassmorphism Cards
+========================= */
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all .3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+
+</style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAV -->
+<nav class="fixed w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+    <span class="font-bold text-xl">LJY</span>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="Joel_Lutor_Yiye_CV.pdf" download>CV</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="pt-32 pb-20 fade-in">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Hi, I’m Joel Lutor Yiye
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">
+        Web Developer
+      </p>
+      <p class="mb-8 text-gray-600">
+I build clean, responsive, and accessible web experiences with strong UI/UX focus, performance awareness, and modern technologies. Open to front-end developer, web developer, and remote assistant opportunities.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="#projects" class="btn bg-gray-900 text-white px-6 py-3 rounded">
+          View Work
+        </a>
+        <a href="docs/Joel_Lutor_Yiye_CV.pdf" download class="btn border px-6 py-3 rounded">
+          <i class="fas fa-download mr-2"></i> CV
+        </a>
+      </div>
+    </div>
+
+    <img src="images/Lutor portrait.jpg"
+         alt="Joel Lutor Yiye"
+         class="w-72 h-72 rounded-full object-cover mx-auto shadow-lg"/>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 bg-white fade-in">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-600 leading-relaxed">
+      I am a creative and detail-oriented Web Developer with strong UI/UX instincts, performance awareness, and accessibility-first thinking, passionate about building digital experiences that are not only visually engaging but also intuitive, inclusive, and technically sound.
+
+With a solid foundation in HTML, CSS, JavaScript, and modern frameworks such as React, I focus on creating responsive, scalable, and maintainable web applications that align with both user needs and business goals. My development approach blends clean code practices with thoughtful interface design, ensuring that every product I build delivers clarity, speed, and usability across devices and platforms.
+
+Beyond writing code, I place strong emphasis on user experience, micro-interactions, and interface consistency. I believe that great software is defined not only by how it works, but by how it feels. This philosophy guides my work in crafting layouts, animations, and interaction flows that enhance engagement while maintaining performance and accessibility standards.
+
+As a developer intern, I bring a growth-driven mindset, strong problem-solving skills, and a commitment to continuous learning. I am comfortable collaborating in team environments, working with version control systems, debugging complex issues, and translating design concepts into functional, production-ready interfaces. My experience spans personal projects, professional documentation, and real-world applications, all of which reflect my dedication to quality and improvement.
+
+I am currently seeking opportunities to contribute to forward-thinking teams where I can deepen my technical expertise, refine my design sensibilities, and help build meaningful digital products. My goal is to grow into a well-rounded software engineer who delivers solutions that are elegant, reliable, and impactful.
+
+When I am not coding, I actively explore emerging technologies, study interface design patterns, and refine my portfolio to reflect the evolving standards of modern web development.
+
+— Lutor Yiye
+Junior Web Developer | UI-Focused Engineer
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 bg-gray-50 fade-in">
+  <div class="max-w-4xl mx-auto px-4"> 
+    <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+
+    <div class="space-y-6">
+      <div>
+        <div class="flex justify-between mb-1"><span>HTML / CSS</span></div>
+        <div class="h-2 bg-gray-200 rounded">
+          <!--<div class="h-2 bg-gray-900 rounded w-[95%]"></div> -->
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-1"><span>JavaScript</span></div>
+        <div class="h-2 bg-gray-200 rounded">
+          <!--<div class="h-2 bg-gray-900 rounded w-[90%]"></div> -->
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1"><span>React Framework</span></div>
+        <div class="h-2 bg-gray-200 rounded">
+          <!--<div class="h-2 bg-gray-900 rounded w-[90%]"></div> -->
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1"><span>Git & Github</span></div>
+        <div class="h-2 bg-gray-200 rounded">
+          <!--<div class="h-2 bg-gray-900 rounded w-[90%]"></div> -->
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1"><span>Debugging skills</span></div>
+        <div class="h-2 bg-gray-200 rounded">
+          <!--<div class="h-2 bg-gray-900 rounded w-[90%]"></div> -->
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1"><span>Code Cleanliness & Organization</span></div>
+        <div class="h-2 bg-gray-200 rounded">
+          <!--<div class="h-2 bg-gray-900 rounded w-[90%]"></div> -->
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1"><span>Problem solving and Logical thinking</span></div>
+        <div class="h-2 bg-gray-200 rounded">
+          <!--<div class="h-2 bg-gray-900 rounded w-[90%]"></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 bg-white fade-in">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+
+    <!-- SINGLE GRID CONTAINER -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+
+      <!-- Project 1 -->
+      <div class="card bg-white rounded shadow w-full max-w-sm">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+             class="h-48 w-full object-cover"/>
+        <div class="p-6 text-center">
+          <h3 class="font-semibold text-lg">E-commerce Platform</h3>
+          <p class="text-gray-600 text-sm">React • Node • MongoDB</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card bg-white rounded shadow w-full max-w-sm">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+             class="h-48 w-full object-cover"/>
+        <div class="p-6 text-center">
+          <h3 class="font-semibold text-lg">Task Manager App</h3>
+          <p class="text-gray-600 text-sm">HTML • CSS • JS</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card bg-white rounded shadow w-full max-w-sm">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+             class="h-48 w-full object-cover"/>
+        <div class="p-6 text-center">
+          <h3 class="font-semibold text-lg">Portfolio Website</h3>
+          <p class="text-gray-600 text-sm">Tailwind • UI/UX</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-28 gradient-bg fade-in">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold mb-4">Let’s Work Together</h2>
+
+    <p class="text-gray-600 mb-14 max-w-2xl mx-auto">
+      Open to frontend development, UI/UX design, and remote opportunities. 
+      Let’s build something meaningful.
+    </p>
+
+    <!-- Glass Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Email -->
+      <a href="mailto:your@email.com"
+         class="glass p-10 rounded-3xl text-center group">
+
+        <i class="fas fa-envelope text-4xl mb-5 text-gray-800 group-hover:scale-110 transition"></i>
+        <h3 class="font-semibold text-lg mb-2">Email</h3>
+        <p class="text-gray-600 text-sm break-all">your@email.com</p>
+
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/yourusername"
+         target="_blank"
+         class="glass p-10 rounded-3xl text-center group">
+
+        <i class="fab fa-github text-4xl mb-5 text-gray-800 group-hover:scale-110 transition"></i>
+        <h3 class="font-semibold text-lg mb-2">GitHub</h3>
+        <p class="text-gray-600 text-sm">View my repositories</p>
+
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/yourusername"
+         target="_blank"
+         class="glass p-10 rounded-3xl text-center group">
+
+        <i class="fab fa-linkedin text-4xl mb-5 text-gray-800 group-hover:scale-110 transition"></i>
+        <h3 class="font-semibold text-lg mb-2">LinkedIn</h3>
+        <p class="text-gray-600 text-sm">Let’s connect professionally</p>
+
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-black text-gray-400 py-6 text-center">
+  © 2025 Joel Lutor Yiye
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("show");
+  });
+});
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
